@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/marlus/2022.1/teste1/projeto-banco/projeto-banco.csproj": {}
+  },
+  "projects": {
+    "/home/marlus/2022.1/teste1/projeto-banco/projeto-banco.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marlus/2022.1/teste1/projeto-banco/projeto-banco.csproj",
+        "projectName": "projeto-banco",
+        "projectPath": "/home/marlus/2022.1/teste1/projeto-banco/projeto-banco.csproj",
+        "packagesPath": "/home/marlus/.nuget/packages/",
+        "outputPath": "/home/marlus/2022.1/teste1/projeto-banco/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marlus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.0-preview-20220612-01, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/marlus/dotnet/sdk/3.1.420/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
