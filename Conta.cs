@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace projeto_banco
 {
-    public class Conta
+    public  class Conta
     {
         public double saldo {get; set;} 
 

@@ -22,5 +22,18 @@ namespace projeto_banco
             return conta.saldo;
         }
 
+        public double transferir (double valor, Conta emissora, Conta receptora)
+        {
+            if (valor > emissora.saldo ) {
+                throw new Exception ("Valor maior que saldo em conta!");
+            }
+            else {
+                emissora.saldo -= valor;
+                receptora.saldo +=valor;
+            }
+            return receptora.saldo;
+
+        }
+
     }
 }
