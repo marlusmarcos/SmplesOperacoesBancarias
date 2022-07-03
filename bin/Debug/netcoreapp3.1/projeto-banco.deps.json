@@ -10,6 +10,8 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.3.0-preview-20220612-01",
           "xunit": "2.4.1",
+          "xunit.assert": "2.4.1",
+          "xunit.core": "2.4.1",
           "xunit.runner.visualstudio": "2.4.1"
         },
         "runtime": {

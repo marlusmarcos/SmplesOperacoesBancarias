@@ -1,6 +1,6 @@
 using Xunit;
 using projeto_banco;
-
+using System;
 
 public  class testclass
 {
@@ -8,27 +8,9 @@ public  class testclass
     
     Conta conta2 = new Conta();
 
-
-
     Operacoes operacao = new Operacoes ();
 
-    [Fact]
-    public void testadd()
-    {
-        Assert.Equal(4, Program.add(2,2)); 
-    }
-
-    [Theory]
-    [InlineData (5, 3,2)]
-    [InlineData (6, 3,3)]
-    [InlineData (25, 3,22)]
-    [InlineData (50, 30,20)]
-    [InlineData (55, 35,20)]
-    public void testAdd2(int valor, int a, int b)
-    {
-        int resultado = Program.add (a, b);
-        Assert.Equal(valor, resultado); 
-    }
+   
     [Fact]
     public void testeCreditar () {
         Assert.Equal(150.0, operacao.creditar(150.0, conta));
@@ -49,6 +31,9 @@ public  class testclass
     public void testExceptionCreditar () 
     {
         Conta ct = new Conta ();
+        var exceptionCreditar = Assert.Throws<Exception> (() => operacao.creditar(-5.0,ct));
+        Assert.Equal ("Valor menor ou igual 0!", exceptionCreditar.Message);
+
 
     }
 
