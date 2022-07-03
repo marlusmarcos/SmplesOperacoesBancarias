@@ -45,6 +45,13 @@ public  class testclass
         Assert.Equal (esperado, resultado);    
     }
 
+    [Fact]
+    public void testExceptionCreditar () 
+    {
+        Conta ct = new Conta ();
+
+    }
+
 
 
 }
