@@ -15,8 +15,8 @@ namespace projeto_banco
             return  conta.saldo;
         }
         public double debitar (double valor, Conta conta) {
-            if (valor <= 0.0) {
-                throw new Exception ("Valor menor ou igual 0!");
+            if (valor > conta.saldo) {
+                throw new Exception ("Valor em conta menor que não é permitido!");
             }
              conta.saldo -= valor;
             return conta.saldo;
